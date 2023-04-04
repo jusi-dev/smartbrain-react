@@ -113,7 +113,7 @@ class App extends React.Component {
       .then((result) => {
         this.displayFaceBox(this.calculateFaceLocation(result));
         if (result) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://smartbrain-api-34ab.onrender.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
